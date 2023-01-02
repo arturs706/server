@@ -1,4 +1,4 @@
 /target
 .env
-.rest
+rest.rest
 .schema.sql
