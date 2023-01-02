@@ -1,0 +1,170 @@
+# CREATE TABLES
+
+###
+POST http://localhost:10000/api/v1/createtable
+Content-Type: application/json
+
+# REG USER
+
+###
+POST http://localhost:10000/api/v1/users/regroute
+Content-Type: application/json
+
+{
+    "fullname": "Arthur George Smith",
+    "dob": "10/10/2000",
+    "gender": "male",
+    "mob_phone": "07855555555",
+    "email": "email@email.com",
+    "passwd": "Nw1qrst!",
+    "address": "Flat 10, 15 George House",
+    "city": "London",
+    "postcode": "E3 3JH"
+}
+
+
+###
+POST http://localhost:10000/api/v1/products/proddescr
+Content-Type: application/json
+
+{
+    "descr": "LEGO"
+}
+
+###
+POST http://localhost:10000/api/v1/products/proddescr
+Content-Type: application/json
+
+{
+    "descr": "PAW"
+}
+
+###
+POST http://localhost:10000/api/v1/products/proddescr
+Content-Type: application/json
+
+{
+    "descr": "LOL"
+}
+
+###
+POST http://localhost:10000/api/v1/products
+Content-Type: application/json
+
+{
+    "prodname": "PAW Patrol Snuggle Up Pups Chase",
+    "proddescr": "Bring home the perfect naptime companion: PAW Patrol Snuggle Up Chase! Made of super soft materials, this cuddly push pup will be your childs favorite part of bedtime For ages 3 years and over.",
+    "prodsku": "2892",
+    "descr": "PAW",
+    "availableqty": 13,
+    "price": "18.00"
+}
+
+###
+POST http://localhost:10000/api/v1/product/images
+Content-Type: application/json
+
+{
+    "prodsku": "2892",
+    "imageone": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669137535/uwl/PAW/pawpatrolsnuggleuppupschase/image19680ead957f6441daf5fa384a66d3300.webp",
+    "imagetwo": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669137535/uwl/PAW/pawpatrolsnuggleuppupschase/image29680ead957f6441daf5fa384a66d3300.webp",
+    "imagethree": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669137535/uwl/PAW/pawpatrolsnuggleuppupschase/image39680ead957f6441daf5fa384a66d3300.webp",
+    "imagefour": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669137535/uwl/PAW/pawpatrolsnuggleuppupschase/image49680ead957f6441daf5fa384a66d3300.webp"
+}
+
+
+###
+POST http://localhost:10000/api/v1/products
+Content-Type: application/json
+
+{
+    "prodname": "PAW Patrol Snuggle Up Skye Soft Toy",
+    "proddescr": "Bring home the perfect naptime companion: PAW Patrol Snuggle Up Skye! Made of super soft materials, this cuddly push pup will be your childs favorite part of bedtime and playtime. Snuggle Up Skye comes in two styles., PAW Patrol Snuggle Up Skye Soft Toy! ",
+    "prodsku": "7203",
+    "descr": "PAW",
+    "availableqty": 17,
+    "price": "18.00"
+}
+
+###
+POST http://localhost:10000/api/v1/product/images
+Content-Type: application/json
+
+{
+    "prodsku": "7203",
+    "imageone": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669152103/uwl/PAW/pawpatrolsnuggleupskyesofttoy/Image19680ead957f6441daf5fa384a66z1120.webp",
+    "imagetwo": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669152103/uwl/PAW/pawpatrolsnuggleupskyesofttoy/Image29680ead957f6441daf5fa384a66z1120.webp",
+    "imagethree": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669152103/uwl/PAW/pawpatrolsnuggleupskyesofttoy/Image39680ead957f6441daf5fa384a66z1120.webp",
+    "imagefour": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669152103/uwl/PAW/pawpatrolsnuggleupskyesofttoy/Image49680ead957f6441daf5fa384a66z1120.webp"
+}
+
+###
+POST http://localhost:10000/api/v1/products
+Content-Type: application/json
+
+{
+    "prodname": "LOL Surprise Fashion Show Doll",
+    "proddescr": " Imin Be Tween, but right where Iwannabe. Full of surprises & fierce style. Look out world, cuzhere I come. Introducing the best-selling L. O. L. Surprise Tween Series 3 fashion dolls: say hello to Emma Emo",
+    "prodsku": "44415",
+    "descr": "LOL",
+    "availableqty": 33,
+    "price": "26.44"
+}
+
+###
+POST http://localhost:10000/api/v1/product/images
+Content-Type: application/json
+
+{
+    "prodsku": "44415",
+    "imageone": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669370424/uwl/LOL/315-removebg-preview.webp",
+    "imagetwo": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669369586/uwl/LOL/2-removebg-preview.webp",
+    "imagethree": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669369586/uwl/LOL/4-removebg-preview.webp",
+    "imagefour": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669369586/uwl/LOL/5-removebg-preview.webp"
+}
+
+###
+POST http://localhost:10000/api/v1/products
+Content-Type: application/json
+
+{
+    "prodname": "LEGO Star Wars Luke Skywalker",
+    "proddescr": "Channel Jedi-like focus to build this super-detailed Ultimate Collector Series version of Luke Skywalkers Landspeeder from Star Wars: A New Hope. Build and display the first-ever LEGO Star Wars UCS version of Luke Skywalkers Landspeeder from Star Wars: A New Hope.",
+    "prodsku": "4234",
+    "descr": "LEGO",
+    "availableqty": 33,
+    "price": "140.00"
+}
+
+###
+POST http://localhost:10000/api/v1/product/images
+Content-Type: application/json
+
+{
+    "prodsku": "4234",
+    "imageone": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669372232/uwl/LEGO/legostarwarslukeskywalkersset/1-removebg-preview.webp",
+    "imagetwo": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669372232/uwl/LEGO/legostarwarslukeskywalkersset/2-removebg-preview.webp",
+    "imagethree": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669372232/uwl/LEGO/legostarwarslukeskywalkersset/4.webp",
+    "imagefour": "https://res.cloudinary.com/dyvgcv5se/image/upload/v1669372232/uwl/LEGO/legostarwarslukeskywalkersset/5-removebg-preview.webp"
+}
+
+
+###
+GET http://localhost:10000/api/v1/products
+
+
+
+###
+GET http://localhost:10000/api/v1/users
+Content-Type: application/json
+
+
+###
+GET http://localhost:10000/api/v1/getinfo
+Content-Type: application/json
+
+
+
+
+
+
