@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     libedit-dev \
     llvm \
     libclang-dev
-RUN cargo build --released
+RUN cargo build --release
 
 
 RUN find / -name "libclang*" 2>/dev/null
