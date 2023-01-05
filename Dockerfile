@@ -1,4 +1,4 @@
-FROM rust:1.66 as build
+FROM rust:1.65 as build
 
 
 WORKDIR /src/actixlocal
