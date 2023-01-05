@@ -24,3 +24,7 @@ tokio = { version = "1.23.0", features = ["full"] }
 async-stripe = { version = "0.14", features = ["runtime-tokio-hyper"] }
 bigdecimal = { version = "0.3.0", features = ["serde"] }
 sqlx = {version = "0.6.2", features = ["runtime-tokio-native-tls", "postgres", "offline", "time", "chrono", "uuid", "bigdecimal"] }
+rquickjs-sys = "0.1.7"
+
+[features]
+build-bindings = []

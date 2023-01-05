@@ -26,6 +26,9 @@ impl AppState {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    // let clang_lib_path = std::env::var("CLANG_LIB_PATH").unwrap_or("/usr/lib/llvm-10/lib".to_string());
+    // println!("cargo:rustc-link-lib=static=clang");
+    // println!("cargo:rustc-link-search=native={}", clang_lib_path);
     dotenv().ok();
     let db_name: String = std::env::var("DB_URL").expect("DB_URL must be set");
     let db_loc: String = std::env::var("DB_SESS").expect("DB_SESS must be set");

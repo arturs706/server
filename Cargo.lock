@@ -195,6 +195,7 @@ dependencies = [
  "jsonwebtoken",
  "lettre",
  "redis",
+ "rquickjs-sys",
  "serde",
  "serde_json",
  "sqlx",
